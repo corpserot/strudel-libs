@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "moduleResolution": "node",
+    "target": "esnext",
+    "lib": ["ESNext", "DOM"]
+  },
+  "include": [
+    "*.mjs",
+    "*.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

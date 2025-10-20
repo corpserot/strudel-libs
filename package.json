@@ -1,0 +1,20 @@
+{
+  "name": "strudel-lib",
+  "version": "1.0.0",
+  "description": "My open personal library for Strudel stuff",
+  "author": "corpserot",
+  "license": "0BSD",
+  "type": "module",
+  "main": "./lib.mjs",
+  "exports": {
+    "import": "./lib.mjs"
+  },
+  "devDependencies": {
+    "@strudel/core": "^1.2.4",
+    "@strudel/web": "^1.2.5"
+  },
+  "dependencies": {
+    "@strudel/mini": "^1.2.4",
+    "@strudel/tonal": "^1.2.4"
+  }
+}
