@@ -1,3 +1,7 @@
+import {
+  register, registerControl, silence
+} from '@strudel/core';
+
 /* --------------------------------- signals -------------------------------- */
 
 /**
@@ -125,4 +129,6 @@ export const shush = [Math.pow(2,32)-1, silence];
 
 export const bank = registerControl(['bank', 'n']);
 
-Object.assign(globalThis, await import(import.meta.url));
+export async function inject(env = globalThis) {
+  Object.assign(env, await import(import.meta.url));
+}

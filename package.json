@@ -9,6 +9,9 @@
   "exports": {
     "import": "./lib.mjs"
   },
+  "scripts": {
+    "update-readme": "node utils/update_readme.js"
+  },
   "devDependencies": {
     "@strudel/core": "^1.2.4",
     "@strudel/web": "^1.2.5"
