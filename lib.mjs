@@ -1,6 +1,7 @@
-import {
-  register, registerControl, silence
-} from '@strudel/core';
+if (typeof globalThis.process?.versions?.node === 'string') {
+  let strudelcore = await import('@strudel/core');
+  Object.assign(globalThis, strudelcore);
+}
 
 /* --------------------------------- signals -------------------------------- */
 
