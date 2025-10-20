@@ -1,15 +1,3 @@
-import {
-  n,
-  perlin,
-  register,
-  registerControl,
-  reify,
-  signal,
-  silence,
-  stack
-} from "@strudel/core";
-import { mini } from "@strudel/mini";
-
 /* --------------------------------- signals -------------------------------- */
 
 /**
