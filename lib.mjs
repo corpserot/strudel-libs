@@ -124,3 +124,5 @@ export const fadeout = register('fadein', function(cycles, gainstart, gainstop, 
 export const shush = [Math.pow(2,32)-1, silence];
 
 export const bank = registerControl(['bank', 'n']);
+
+Object.assign(globalThis, await import(import.meta.url));
