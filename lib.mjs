@@ -117,10 +117,10 @@ export const can = register('can', (pat) => reify(pat)
  */
 export const applyPats = (pats,fs) => pats.map((p,i) => fs[i]?.(p) ?? p);
 
-export const fadein = register('fadein', function(cycles, gainstart, gainstop, pat) {
+export const fadein = register('fadein', function(cycles, gainstart=0, gainstop=0.8, pat) {
   return pat.gain(ramp(cycles).range(gainstart, gainstop));
 })
-export const fadeout = register('fadein', function(cycles, gainstart, gainstop, pat) {
+export const fadeout = register('fadeout', function(cycles, gainstart=0, gainstop=0.8, pat) {
   return pat.gain(iramp(cycles).range(gainstart, gainstop));
 })
 
